@@ -12,7 +12,7 @@ export const AddCategory = ({ onNewCategory }) => {
         e.preventDefault()        
         
         if(inputValue.trim().length <= 1) return // control errores
-
+        
         onNewCategory( inputValue.trim() )
         setInputValue(''); // limpiar el input
     }
@@ -22,7 +22,7 @@ export const AddCategory = ({ onNewCategory }) => {
             <input
                 type="text"
                 placeholder="Buscar..."
-                defaultValue={ inputValue }
+                value={ inputValue }
                 onChange={ onInputChange }
             />
         </form>
