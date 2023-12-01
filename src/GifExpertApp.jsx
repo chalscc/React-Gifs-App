@@ -14,8 +14,6 @@ export const GifExpertApp = () => {
         setCategories( [newCategory, ...categories] )
     }
 
-    console.log(categories)
-
     return (
         <>
         <h1>GifExpertApp</h1>
