@@ -1,4 +1,4 @@
-export const getGifs = async() => {
+export const getGifs = async(category) => {
     
     const api_key = 'ascTyQ87C60ZxNX9ZQhkTFEwpnRpJJev'
     const limit = 10;
@@ -14,5 +14,7 @@ export const getGifs = async() => {
         title: img.title,
         url: img.images?.downsized_medium.url
     }));
+
+    console.log(gifs);
 
 }
